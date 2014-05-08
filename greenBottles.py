@@ -1,4 +1,8 @@
-print("10 green bottles, hanging on the wall")
-print("10 green bottles, hanging on the wall")
-print("And if 1 green bottle should acidentally fall,")
-print("They'll be 9 green bottles hanging on the wall.")
+import time
+for i in range(10, 0, -1):
+    for j in range(2):
+        print("{0} green bottle(s), hanging on the wall".format(i))
+
+    print("And if 1 green bottle should accidently fall,")
+    print("They'll be {0} green bottle(s) hanging on the wall.\n".format(i-1))
+    time.sleep(1)
